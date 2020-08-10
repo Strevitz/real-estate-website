@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "../images/logo.svg";
-import { Spin as Hamburger } from "hamburger-react";
+import { Slant as Hamburger } from "hamburger-react";
 import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
@@ -19,10 +19,24 @@ export default class Navbar extends Component {
             <Link to="/">
               <img src={logo} alt="beach resort" />
             </Link>
-            <button type="button" className="nav-btn">
-              <Hamburger color="black" rounded className="nav-icon" />
+            <button
+              type="button"
+              className="nav-btn"
+              onClick={this.handleToggle}
+            >
+              <Hamburger rounded={true} className="nav-icon" />
             </button>
           </div>
+          <ul
+            className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
+          >
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/rooms">Rooms</Link>
+            </li>
+          </ul>
         </div>
       </nav>
     );

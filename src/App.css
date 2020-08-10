@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-m :root {
+:root {
   --primaryColor: #af9a7d;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
@@ -107,13 +107,13 @@ h6 {
   cursor: pointer;
   outline: none;
 }
-.nav-icon {
+.hamburger-react {
   font-size: 1.5rem;
   color: var(--primaryColor);
 }
 .nav-links {
-  /*height: 0;
-  overflow: hidden; */
+  height: 0;
+  overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
 }
@@ -252,6 +252,7 @@ h6 {
 }
 .services h6 {
   letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
 }
 .services p {
   width: 80%;
