@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../images/logo.svg";
+import logo from "../images/logo2.png";
 import { Slant as Hamburger } from "hamburger-react";
 import { Link } from "react-router-dom";
 
@@ -35,6 +35,12 @@ export default class Navbar extends Component {
             </li>
             <li>
               <Link to="/rooms">Rooms</Link>
+            </li>
+            <li>
+              <Link to="/rooms">About Propriété</Link>
+            </li>
+            <li>
+              <Link to="/rooms">Contact</Link>
             </li>
           </ul>
         </div>
