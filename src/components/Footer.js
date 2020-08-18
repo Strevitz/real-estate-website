@@ -66,6 +66,8 @@ export default function Footer() {
                 <a
                   href="https://twitter.com"
                   target={"_blank"}
+                  without
+                  rel="noopener noreferrer"
                   title={"Twitter"}
                 >
                   <img alt={"Twitter"} src={iconTwitter} />
@@ -74,6 +76,8 @@ export default function Footer() {
                 <a
                   href="https://www.instagram.com"
                   target={"_blank"}
+                  without
+                  rel="noopener noreferrer"
                   title={"Instagram"}
                 >
                   <img alt={"Instagram"} src={iconInstagram} />
@@ -82,6 +86,8 @@ export default function Footer() {
                 <a
                   href="https://www.facebook.com"
                   target={"_blank"}
+                  without
+                  rel="noopener noreferrer"
                   title={"Facebook"}
                 >
                   <img alt={"Facebook"} src={iconFacebook} />
