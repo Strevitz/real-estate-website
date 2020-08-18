@@ -2,9 +2,9 @@
 
 ### Real estate responsive website with full functional apartment filters and Contentful CMS.
 
-![vinyl-laptop-full-presentation](https://user-images.githubusercontent.com/61030079/89400698-8cd04a80-d714-11ea-9300-64368cf08e6d.png)
+![real-estate-presentation-laptop](https://user-images.githubusercontent.com/61030079/90545409-e579fb80-e188-11ea-9afa-0196b330ef3f.png)
 
-![vinyl_presentation](https://user-images.githubusercontent.com/61030079/89345176-4c86b300-d6a7-11ea-979c-b1fcb8db82ca.png)
+![real-estate-presentation-phone](https://user-images.githubusercontent.com/61030079/90545469-fd517f80-e188-11ea-853c-898c13fa1948.png)
 
 ## General info
 
