@@ -14,7 +14,7 @@ export default class CurrentOffers extends Component {
 
     return (
       <section className="featured-rooms">
-        <Title title="current rooms" />
+        <Title title="best offers" />
         <div className="featured-rooms-center">
           {loading ? <Loading /> : rooms}
         </div>

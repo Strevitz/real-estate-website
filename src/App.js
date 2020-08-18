@@ -3,6 +3,7 @@ import "./App.css";
 
 import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
+import About from "./pages/About";
 import SingleRoom from "./pages/SingleRoom";
 import Error from "./pages/404";
 import { Route, Switch } from "react-router-dom";
@@ -16,6 +17,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/rooms/" component={Rooms} />
+        <Route exact path="/about/" component={About} />
         <Route exact path="/rooms/:slug" component={SingleRoom} />
         <Route component={Error} />
       </Switch>

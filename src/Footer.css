@@ -6,20 +6,8 @@ footer {
   display: flex;
 }
 
-@media screen and (max-width: 760px) {
-  footer {
-    padding: 50px 0 45px;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .widget__item {
-    padding: 15px 0 0;
-  }
-}
-
 .about {
-  margin-top: 26px;
+  margin-top: 30px;
   padding-right: 40px;
 }
 
@@ -32,12 +20,11 @@ footer {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 0;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .links ul {
-  margin: 40px 0 0 0;
+  margin: 35px 0 0 0;
 }
 
 ul li {
@@ -58,7 +45,7 @@ a:active {
 .social {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 30px;
 }
 .social img {
@@ -72,6 +59,9 @@ a:active {
 
 p {
   font-size: 13px;
+}
+
+@media screen and (max-width: 760px) {
 }
 
 /* end footer*/

@@ -11,11 +11,11 @@ const Home = () => {
     <React.Fragment>
       <Hero>
         <Banner
-          title="Luxiurious rooms"
-          subtitle="deluxe rooms starting at $299"
+          title="Find Your New Home"
+          subtitle="deluxe apartments starting at 3000 PLN"
         >
           <Link to="/rooms" className="btn-primary">
-            our rooms
+            our apartments
           </Link>
         </Banner>
       </Hero>

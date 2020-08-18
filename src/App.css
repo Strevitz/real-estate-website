@@ -64,6 +64,7 @@ h6 {
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
+  margin-top: 1rem;
 }
 .btn-primary:hover {
   background: transparent;
@@ -121,6 +122,8 @@ h6 {
 }
 .nav-center {
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .nav-center .nav-links {
   align-items: flex-end;
@@ -130,6 +133,7 @@ h6 {
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
+  margin-bottom: 0;
 }
 .nav-links a {
   display: block;
@@ -179,7 +183,7 @@ h6 {
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/room-2.jpeg");
+  background-image: url("./images/IMG_20191117_135359.jpg");
   min-height: 60vh;
 }
 /* End of Hero */
@@ -366,12 +370,16 @@ h6 {
   transform: translate(-50%, -50%) scale(1);
 }
 .room-info {
-  background: var(--darkGrey);
+  background: var(--offWhite);
   text-transform: capitalize;
   padding: 0.5rem 0;
   text-align: center;
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
+}
+
+p {
+  margin-bottom: 0 !important;
 }
 /* end of room  */
 /* single room*/

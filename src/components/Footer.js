@@ -21,9 +21,11 @@ export default function Footer() {
 
               <div className={"about"}>
                 <p>
-                  Mościwego Pana zastępuje i zwycięzca, wydartych potomkom
-                  Cezarów rzucił w Pańskim pisano zakonie i Rzeczpospolita!
-                  Zawżdy z których by wychowanie poznano stołeczne.
+                  Whether you are a landlord looking for a let only, rent
+                  collection or full management service, Propriété will help you
+                  with your legal, statutory and financial obligations whilst
+                  finding the most suitable, fully referenced tenants for your
+                  property.
                 </p>
               </div>
             </div>
@@ -32,10 +34,10 @@ export default function Footer() {
           <div className={"col-3"}>
             <div className={"widget__item"}>
               <div className={"links"}>
-                <h4>Service</h4>
+                <h4>Customer Service</h4>
                 <ul>
                   <li>
-                    <Link to="/contact" title={"Contact Us"}>
+                    <Link to="/about" title={"About Us"}>
                       About
                     </Link>
                   </li>
@@ -46,12 +48,12 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link to="/privacy" title={"Privacy Policy"}>
-                      Private Policy
+                      Privacy Policy
                     </Link>
                   </li>
                   <li>
-                    <a href="519603221" title={"Phone number"}>
-                      tel. 519 603 221
+                    <a href="8078078074" title={"Phone number"}>
+                      tel. 807-807-8074
                     </a>
                   </li>
                 </ul>
