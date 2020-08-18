@@ -534,3 +534,94 @@ p {
   }
 }
 /* end of rooms fitler*/
+/* footer */
+
+footer {
+  padding: 120px 0 45px;
+  background: var(--offWhite);
+  display: flex;
+}
+
+.about {
+  margin-top: 30px;
+  padding-right: 40px;
+}
+
+.about {
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.links h4 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.links ul {
+  margin: 35px 0 0 0;
+}
+
+ul li {
+  line-height: 26px;
+  list-style: none;
+}
+
+a {
+  font-size: 14px;
+  color: var(--mainBlack);
+}
+
+a:hover,
+a:active {
+  color: var(--primaryColor);
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+.social img {
+  margin-left: 20px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 90px;
+}
+
+p {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 760px) {
+  .row {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .widget__item {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links {
+    text-align: center;
+  }
+
+  .about {
+    margin: 3rem 0;
+    padding: 0;
+  }
+
+  .social {
+    margin: 3rem 0;
+    justify-content: space-around;
+  }
+}
+
+/* end footer*/

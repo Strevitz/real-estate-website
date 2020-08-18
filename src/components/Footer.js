@@ -1,5 +1,4 @@
 import React from "react";
-import "../Footer.css";
 import { Link } from "react-router-dom";
 import logo from "../images/logo2.png";
 import iconTwitter from "../images/icon-twitter.svg";
@@ -11,7 +10,7 @@ export default function Footer() {
     <footer>
       <div className={"container mx-5"}>
         <div className={"row"}>
-          <div className={"col-6"}>
+          <div className={"col-md-6 col-sm-12"}>
             <div className={"widget__item"}>
               <div className={"logo"}>
                 <Link to="/" title={"Home"}>
@@ -31,7 +30,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className={"col-3"}>
+          <div className={"col-md-3 col-sm-12"}>
             <div className={"widget__item"}>
               <div className={"links"}>
                 <h4>Customer Service</h4>
@@ -61,7 +60,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className={"col-3"}>
+          <div className={"col-md-3 col-sm-12"}>
             <div className={"widget__item"}>
               <div className={"social"}>
                 <a
