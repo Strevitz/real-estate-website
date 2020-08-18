@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { RoomContext } from "../context";
 import Loading from "./Loading";
-import Room from "./Room";
+import Apartment from "./Apartment";
 import Title from "./Title";
 
 export default class CurrentOffers extends Component {
@@ -9,7 +9,7 @@ export default class CurrentOffers extends Component {
   render() {
     let { loading, featuredRooms: rooms } = this.context;
     rooms = rooms.map((room) => {
-      return <Room key={room.id} room={room} />;
+      return <Apartment key={room.id} room={room} />;
     });
 
     return (

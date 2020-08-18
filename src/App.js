@@ -2,9 +2,9 @@ import React from "react";
 import "./App.css";
 
 import Home from "./pages/Home";
-import Rooms from "./pages/Rooms";
+import Apartments from "./pages/Apartments";
 import About from "./pages/About";
-import SingleRoom from "./pages/SingleRoom";
+import SingleApartment from "./pages/SingleApartment";
 import Error from "./pages/404";
 import { Route, Switch } from "react-router-dom";
 
@@ -16,9 +16,9 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/rooms/" component={Rooms} />
+        <Route exact path="/apartments/" component={Apartments} />
         <Route exact path="/about/" component={About} />
-        <Route exact path="/rooms/:slug" component={SingleRoom} />
+        <Route exact path="/rooms/:slug" component={SingleApartment} />
         <Route component={Error} />
       </Switch>
     </>

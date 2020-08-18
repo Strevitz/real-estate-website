@@ -1,5 +1,5 @@
 import React from "react";
-import Room from "./Room";
+import Apartment from "./Apartment";
 
 export default function RoomlList({ rooms }) {
   if (rooms.length === 0) {
@@ -14,7 +14,7 @@ export default function RoomlList({ rooms }) {
     <section className="roomslist">
       <div className="roomslist-center">
         {rooms.map((item) => {
-          return <Room key={item.id} room={item} />;
+          return <Apartment key={item.id} room={item} />;
         })}
       </div>
     </section>
