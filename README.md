@@ -1,4 +1,4 @@
-# PROPERTIE REAL ESTATE REACT WEBSITE
+# REAL ESTATE REACT WEBSITE
 
 ### Real estate responsive website with full functional apartment filters and Contentful CMS.
 
