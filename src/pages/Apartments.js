@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import ApartmentsContainer from "../components/ApartmentsContainer";
 
-const Rooms = () => {
+const Apartments = () => {
   return (
     <>
       <Hero hero="roomsHero">
@@ -21,4 +21,4 @@ const Rooms = () => {
   );
 };
 
-export default Rooms;
+export default Apartments;

@@ -14,7 +14,7 @@ const Home = () => {
           title="Find Your New Home"
           subtitle="deluxe apartments starting at 3000 PLN"
         >
-          <Link to="/rooms" className="btn-primary">
+          <Link to="/apartments" className="btn-primary">
             our apartments
           </Link>
         </Banner>

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
 import StyledHero from "../components/StyledHero";
 
-export default class SingleRoom extends Component {
+export default class SingleApartment extends Component {
   constructor(props) {
     super(props);
     console.log(this.props);
@@ -27,7 +27,7 @@ export default class SingleRoom extends Component {
         <div className="error">
           <h3>no such room coluld be found...</h3>
           <Link to="/apartments" className="btn-primary">
-            back to rooms
+            back to apartments
           </Link>
         </div>
       );
@@ -39,7 +39,7 @@ export default class SingleRoom extends Component {
       size,
       price,
       extras,
-      breakfast,
+      parking,
       pets,
       images,
     } = room;
@@ -49,9 +49,9 @@ export default class SingleRoom extends Component {
     return (
       <>
         <StyledHero img={mainImg || this.state.defaultBg}>
-          <Banner title={`${name} room`}>
+          <Banner title={`${name}`}>
             <Link to="/apartments" className="btn-primary">
-              back to rooms
+              back to apartments
             </Link>
           </Banner>
         </StyledHero>
@@ -77,7 +77,7 @@ export default class SingleRoom extends Component {
                 {capacity > 1 ? ` ${capacity} people` : ` ${capacity} person`}
               </h6>
               <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
-              <h6>{breakfast && "free breakfast"}</h6>
+              <h6>{parking && "free parking"}</h6>
             </article>
           </div>
         </section>
