@@ -12,7 +12,7 @@ export default class Navbar extends Component {
   };
 
   handleLinks = () => {
-    this.setState({ isOpen: this.state.isOpen });
+    this.setState({ isOpen: !this.state.isOpen });
   };
 
   render() {

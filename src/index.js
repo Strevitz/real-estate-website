@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
-import scrollToTop from "./components/scrollToTop";
+import { BrowserRouter } from "react-router-dom";
+import ScrollToTop from "./components/scrollToTop";
 import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
 import App from "./App";
@@ -10,11 +10,11 @@ import { RoomProvider } from "./context";
 
 ReactDOM.render(
   <RoomProvider>
-    <scrollToTop>
-      <Router>
+    <BrowserRouter>
+      <ScrollToTop>
         <App />
-      </Router>
-    </scrollToTop>
+      </ScrollToTop>
+    </BrowserRouter>
   </RoomProvider>,
 
   document.getElementById("root")
