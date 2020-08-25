@@ -1,7 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
-import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import Services from "../components/Services";
 import CurrentOffers from "../components/CurrentOffers";
@@ -21,7 +20,6 @@ const Home = () => {
       </Hero>
       <Services />
       <CurrentOffers />
-      <Footer />
     </React.Fragment>
   );
 };

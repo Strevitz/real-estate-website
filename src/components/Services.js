@@ -36,6 +36,7 @@ export default class Services extends Component {
       },
     ],
   };
+
   render() {
     return (
       <section className="services">

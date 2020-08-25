@@ -206,6 +206,10 @@ h6 {
   background: var(--primaryColor);
   margin: 1.7rem auto;
 }
+span .line-wrap {
+  overflow: hidden;
+  height: 66px;
+}
 .banner p {
   font-size: 1.2rem;
   margin-bottom: 2rem;

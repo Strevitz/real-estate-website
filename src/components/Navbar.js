@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import logo from "../images/logo2.png";
 import { Slant as Hamburger } from "hamburger-react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default class Navbar extends Component {
   state = {
@@ -9,6 +9,10 @@ export default class Navbar extends Component {
   };
   handleToggle = () => {
     this.setState({ isOpen: !this.state.isOpen });
+  };
+
+  handleLinks = () => {
+    this.setState({ isOpen: this.state.isOpen });
   };
 
   render() {
@@ -30,17 +34,41 @@ export default class Navbar extends Component {
           <ul
             className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
           >
-            <li onClick={this.handleToggle}>
-              <Link to="/">Home</Link>
+            <li onClick={this.handleLinks}>
+              <NavLink
+                to="/"
+                exact
+                activeStyle={{ fontWeight: "bold", color: "#af9a7d" }}
+              >
+                Home
+              </NavLink>
             </li>
-            <li onClick={this.handleToggle}>
-              <Link to="/apartments">Apartments</Link>
+            <li onClick={this.handleLinks}>
+              <NavLink
+                to="/apartments"
+                exact
+                activeStyle={{ fontWeight: "bold", color: "#af9a7d" }}
+              >
+                Apartments
+              </NavLink>
             </li>
-            <li onClick={this.handleToggle}>
-              <Link to="/about">About Propriété</Link>
+            <li onClick={this.handleLinks}>
+              <NavLink
+                to="/about"
+                exact
+                activeStyle={{ fontWeight: "bold", color: "#af9a7d" }}
+              >
+                About Propriété
+              </NavLink>
             </li>
-            <li onClick={this.handleToggle}>
-              <Link to="/contact">Contact</Link>
+            <li onClick={this.handleLinks}>
+              <NavLink
+                to="/contact"
+                exact
+                activeStyle={{ fontWeight: "bold", color: "#af9a7d" }}
+              >
+                Contact
+              </NavLink>
             </li>
           </ul>
         </div>

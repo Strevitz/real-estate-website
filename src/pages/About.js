@@ -1,7 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
-import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import Title from "../components/Title";
 
@@ -66,7 +65,6 @@ const About = () => {
           for your property.
         </p>
       </section>
-      <Footer />
     </>
   );
 };
