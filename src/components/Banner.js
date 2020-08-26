@@ -9,7 +9,8 @@ export default function Banner({ children, title, subtitle }) {
     gsap.from([line1, line2], 0.6, {
       delay: 0.4,
       ease: "power3.out",
-      y: 7,
+      opacity: 0,
+      y: 10,
       stagger: {
         amount: 0.2,
       },
