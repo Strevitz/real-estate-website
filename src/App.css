@@ -151,7 +151,7 @@ h6 {
 }
 
 .show-nav {
-  height: 220px;
+  height: 230px;
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
@@ -632,3 +632,32 @@ p {
 }
 
 /* end footer*/
+/* page transition */
+
+.page {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+}
+
+.fade-appear .fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active .fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 200ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+/* end page transition */

@@ -5,6 +5,7 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
 import StyledHero from "../components/StyledHero";
+import Footer from "../components/Footer";
 
 export default class SingleApartment extends Component {
   constructor(props) {
@@ -46,7 +47,7 @@ export default class SingleApartment extends Component {
     const [mainImg, ...defaultImg] = images;
 
     return (
-      <>
+      <div className="page">
         <StyledHero img={mainImg || this.state.defaultBg}>
           <Banner title={`${name}`}>
             <Link to="/apartments" className="btn-primary">
@@ -88,7 +89,8 @@ export default class SingleApartment extends Component {
             })}
           </ul>
         </section>
-      </>
+        <Footer />
+      </div>
     );
   }
 }

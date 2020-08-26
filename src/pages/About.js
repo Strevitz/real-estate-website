@@ -3,10 +3,11 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import Title from "../components/Title";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
-    <>
+    <div className="page">
       <Hero hero="roomsHero">
         <Banner title="About Us">
           <Link to="/" className="btn-primary">
@@ -65,7 +66,8 @@ const About = () => {
           for your property.
         </p>
       </section>
-    </>
+      <Footer />
+    </div>
   );
 };
 

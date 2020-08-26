@@ -4,10 +4,11 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import Services from "../components/Services";
 import CurrentOffers from "../components/CurrentOffers";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <React.Fragment>
+    <div className="page">
       <Hero>
         <Banner
           title="Find Your New Home"
@@ -20,7 +21,8 @@ const Home = () => {
       </Hero>
       <Services />
       <CurrentOffers />
-    </React.Fragment>
+      <Footer />
+    </div>
   );
 };
 

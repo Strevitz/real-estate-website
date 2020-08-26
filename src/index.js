@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop";
 import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
@@ -12,7 +12,7 @@ ReactDOM.render(
   <RoomProvider>
     <BrowserRouter>
       <ScrollToTop>
-        <App />
+        <Route path="/" component={App} />
       </ScrollToTop>
     </BrowserRouter>
   </RoomProvider>,
