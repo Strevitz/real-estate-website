@@ -26,6 +26,7 @@ This frontend application works together with this
 - React-icons
 - Context API
 - Bootstrap-React
+- GSAP
 - Jest
 
 ## Setup
