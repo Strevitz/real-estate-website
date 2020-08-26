@@ -541,9 +541,10 @@ p {
 /* footer */
 
 footer {
-  padding: 120px 0 45px;
+  padding: 100px 0 45px;
   background: var(--offWhite);
   display: flex;
+  justify-content: center;
 }
 
 .about {
@@ -560,7 +561,7 @@ footer {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin: 0;
 }
 
 .links ul {
@@ -568,7 +569,7 @@ footer {
 }
 
 ul li {
-  line-height: 26px;
+  line-height: 30px;
   list-style: none;
 }
 
@@ -602,6 +603,9 @@ p {
 }
 
 @media screen and (max-width: 760px) {
+  div .container {
+    width: 100% !important;
+  }
   .row {
     flex-direction: column !important;
     align-items: center;
