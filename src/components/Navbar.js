@@ -1,19 +1,20 @@
 import React, { Component } from "react";
 import logo from "../images/logo2.png";
-import { Slant as Hamburger } from "hamburger-react";
+//import { Slant as Hamburger } from "hamburger-react";
+import { HamburgerCollapse } from "react-animated-burgers";
 import { Link, NavLink } from "react-router-dom";
 
 export default class Navbar extends Component {
   state = {
-    isOpen: false,
+    isActive: false,
   };
 
   handleToggle = () => {
-    this.setState({ isOpen: !this.state.isOpen });
+    this.setState({ isActive: !this.state.isActive });
   };
 
   closeMenu = () => {
-    this.setState({ isOpen: false });
+    this.setState({ isActive: false });
   };
 
   render() {
@@ -24,21 +25,18 @@ export default class Navbar extends Component {
             <Link to="/">
               <img src={logo} alt="Propertie" />
             </Link>
-            <button
-              onClick={this.handleToggle}
-              type="button"
-              className="nav-btn"
-            >
-              <Hamburger
-                size={18}
-                duration={0.5}
-                rounded
-                className="nav-icon"
+            <button type="button" className="nav-btn">
+              <HamburgerCollapse
+                isActive={this.state.isActive}
+                toggleButton={this.handleToggle}
+                buttonColor="transparent"
+                barColor="#af9a7d"
+                buttonWidth={18}
               />
             </button>
           </div>
           <ul
-            className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
+            className={this.state.isActive ? "nav-links show-nav" : "nav-links"}
           >
             <li onClick={this.closeMenu}>
               <NavLink
