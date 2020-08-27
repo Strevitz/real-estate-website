@@ -23,6 +23,7 @@ This frontend application works together with this
 - Contentful
 - React
 - React Router
+- React-Transition-Group
 - React-icons
 - Context API
 - Bootstrap-React
