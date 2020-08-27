@@ -31,7 +31,7 @@ export default class Navbar extends Component {
                 toggleButton={this.handleToggle}
                 buttonColor="transparent"
                 barColor="#af9a7d"
-                buttonWidth={18}
+                buttonWidth={22}
               />
             </button>
           </div>
